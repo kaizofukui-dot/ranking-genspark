@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>650万円POD出版ターゲット業種ランキング(120業種)</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', 'Noto Sans JP', 'Yu Gothic', 'Meiryo', sans-serif;
+            line-height: 1.8;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 20px;
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 40px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+            border-radius: 12px;
+        }
+        
+        h1 {
+            font-size: 2.2em;
+            color: #2c3e50;
+            text-align: center;
+            border-bottom: 4px solid #667eea;
+            padding-bottom: 20px;
+            margin-bottom: 15px;
+        }
+        
+        .subtitle {
+            text-align: center;
+            color: #7f8c8d;
+            font-size: 0.9em;
+            margin-bottom: 40px;
+        }
+        
+        h2 {
+            font-size: 1.8em;
+            color: white;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 15px 20px;
+            border-radius: 8px;
+            margin-top: 40px;
+            margin-bottom: 25px;
+        }
+        
+        h3 {
+            font-size: 1.4em;
+            color: #2c3e50;
+            margin-top: 30px;
+            margin-bottom: 20px;
+            padding-left: 15px;
+            border-left: 5px solid #3498db;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 25px 0;
+            font-size: 0.95em;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        
+        thead tr {
+            background-color: #667eea;
+            color: white;
+            text-align: left;
+        }
+        
+        th {
+            padding: 12px 15px;
+            font-weight: 600;
+        }
+        
+        td {
+            padding: 12px 15px;
+            border-bottom: 1px solid #ddd;
+        }
+        
+        tbody tr:nth-of-type(even) {
+            background-color: #f8f9fa;
+        }
+        
+        tbody tr:hover {
+            background-color: #e8f4f8;
+            transition: background-color 0.2s;
+        }
+        
+        .evaluation-table th:first-child {
+            width: 30%;
+        }
+        
+        .evaluation-table th:nth-child(2) {
+            width: 15%;
+        }
+        
+        .evaluation-table th:nth-child(3) {
+            width: 55%;
+        }
+        
+        .ranking-table th:first-child {
+            width: 5%;
+        }
+        
+        .ranking-table th:nth-child(2) {
+            width: 20%;
+        }
+        
+        .ranking-table th:nth-child(3) {
+            width: 8%;
+        }
+        
+        .ranking-table th:nth-child(4) {
+            width: 15%;
+        }
+        
+        .ranking-table th:nth-child(5) {
+            width: 20%;
+        }
+        
+        .ranking-table th:nth-child(6) {
+            width: 8%;
+        }
+        
+        .ranking-table th:nth-child(7) {
+            width: 24%;
+        }
+        
+        .score-high {
+            color: #e74c3c;
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+        
+        .badge-pod-ok {
+            background-color: #27ae60;
+            color: white;
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-size: 0.9em;
+        }
+        
+        .badge-pod-maybe {
+            background-color: #f39c12;
+            color: white;
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-size: 0.9em;
+        }
+        
+        .rank-1 {
+            background: linear-gradient(135deg, #ffd700 0%, #ffed4e 100%);
+            font-weight: bold;
+        }
+        
+        .rank-2 {
+            background: linear-gradient(135deg, #c0c0c0 0%, #e8e8e8 100%);
+            font-weight: bold;
+        }
+        
+        .rank-3 {
+            background: linear-gradient(135deg, #cd7f32 0%, #e8a87c 100%);
+            font-weight: bold;
+        }
+        
+        .trophy {
+            font-size: 1.5em;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+            }
+            
+            h1 {
+                font-size: 1.6em;
+            }
+            
+            h2 {
+                font-size: 1.4em;
+            }
+            
+            table {
+                font-size: 0.85em;
+            }
+            
+            th, td {
+                padding: 8px 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>完全網羅版: 650万円POD出版ターゲット業種ランキング(120業種)</h1>
+        <p class="subtitle">【Genspark版】</p>
+        
+        <h3>評価軸(10項目・100点満点)</h3>
+        
+        <table class="evaluation-table">
+            <thead>
+                <tr>
+                    <th>評価項目</th>
+                    <th>配点</th>
+                    <th>評価基準</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>① 営業対象数</td>
+                    <td>15点</td>
+                    <td>500社以上=15点、300-500社=10点、100-300社=5点</td>
+                </tr>
+                <tr>
+                    <td>② 投資回収期間</td>
+                    <td>15点</td>
+                    <td>3年以内=15点、5年以内=10点、7年以内=5点、回収不可=0点</td>
+                </tr>
+                <tr>
+                    <td>③ 成約率</td>
+                    <td>10点</td>
+                    <td>20%以上=10点、15-20%=7点、10-15%=5点</td>
+                </tr>
+                <tr>
+                    <td>④ 単価(粗利)</td>
+                    <td>10点</td>
+                    <td>粗利200万円以上=10点、150-200万円=7点、100-150万円=5点</td>
+                </tr>
+                <tr>
+                    <td>⑤ 出版ニーズ</td>
+                    <td>10点</td>
+                    <td>非常に高い=10点、高い=7点、中=5点</td>
+                </tr>
+                <tr>
+                    <td>⑥ 未出版率</td>
+                    <td>10点</td>
+                    <td>95%以上=10点、90-95%=7点、80-90%=5点</td>
+                </tr>
+                <tr>
+                    <td>⑦ 情報格差</td>
+                    <td>10点</td>
+                    <td>非常に大=10点、大=7点、中=5点</td>
+                </tr>
+                <tr>
+                    <td>⑧ 書店流通必要性</td>
+                    <td>10点</td>
+                    <td>不要=10点、任意=5点、必須=0点</td>
+                </tr>
+                <tr>
+                    <td>⑨ 競合優位性</td>
+                    <td>5点</td>
+                    <td>競合ゼロ=5点、少ない=3点、中=1点</td>
+                </tr>
+                <tr>
+                    <td>⑩ 即効性</td>
+                    <td>5点</td>
+                    <td>6ヶ月以内=5点、1年以内=3点、2年以上=0点</td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <h2><span class="trophy">🏆</span> S級(75点以上): 最優先ターゲット(25業種)</h2>
+        
+        <table class="ranking-table">
+            <thead>
+                <tr>
+                    <th>順位</th>
+                    <th>業種</th>
+                    <th>スコア</th>
+                    <th>営業対象数</th>
+                    <th>主要ニーズ</th>
+                    <th>POD可否</th>
+                    <th>備考</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="rank-1">
+                    <td>1</td>
+                    <td>不妊治療クリニック</td>
+                    <td><span class="score-high">88点</span></td>
+                    <td>600-800施設</td>
+                    <td>患者獲得/信頼構築</td>
+                    <td><span class="badge-pod-ok">◎</span></td>
+                    <td>保険適用後も自費多い</td>
+                </tr>
+                <tr class="rank-2">
+                    <td>2</td>
+                    <td>葬儀業界</td>
+                    <td><span class="score-high">82点</span></td>
+                    <td>5,000-7,000社</td>
+                    <td>終活/家族葬ガイド</td>
+                    <td><span class="badge-pod-ok">◎</span></td>
+                    <td>書店流通不要</td>
+                </tr>
+                <tr class="rank-3">
+                    <td>3</td>
+                    <td>富裕層不動産仲介</td>
+                    <td><span class="score-high">79点</span></td>
+                    <td>3,000-5,000社</td>
+                    <td>相続・資産防衛</td>
+                    <td><span class="badge-pod-maybe">△</span></td>
+                    <td>書店流通推奨</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>美容医療(美容外科・皮膚科)</td>
+                    <td><span class="score-high">76点</span></td>
+                    <td>3,000-4,000施設</td>
+                    <td>集客/差別化</td>
+                    <td><span class="badge-pod-ok">◎</span></td>
+                    <td>競合やや多</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>矯正歯科専門</td>
+                    <td><span class="score-high">75点</span></td>
+                    <td>3,000施設</td>
+                    <td>患者教育/ブランド</td>
+                    <td><span class="badge-pod-ok">◎</span></td>
+                    <td>高単価・長期治療</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>審美歯科・インプラント</td>
+                    <td>74点</td>
+                    <td>5,000施設</td>
+                    <td>集客/信頼構築</td>
+                    <td><span class="badge-pod-ok">◎</span></td>
+                    <td>競合中</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>高級注文住宅・デザイン住宅</td>
+                    <td>72点</td>
+                    <td>2,000-3,000社</td>
+                    <td>ブランディング</td>
+                    <td><span class="badge-pod-maybe">△</span></td>
+                    <td>書店流通推奨</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>社会保険労務士(給与特化)</td>
+                    <td>71点</td>
+                    <td>5,000-8,000事務所</td>
+                    <td>専門性訴求</td>
+                    <td><span class="badge-pod-ok">◎</span></td>
+                    <td>ニッチ特化型</td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td>眼科(レーシック・ICL)</td>
+                    <td>70点</td>
+                    <td>1,500施設</td>
+                    <td>患者獲得</td>
+                    <td><span class="badge-pod-ok">◎</span></td>
+                    <td>高単価・自費</td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>高級リフォーム・リノベ</td>
+                    <td>69点</td>
+                    <td>3,000社</td>
+                    <td>ブランディング</td>
+                    <td><span class="badge-pod-maybe">△</span></td>
+                    <td>富裕層特化</td>
+                </tr>
+                <tr>
+                    <td>11</td>
+                    <td>M&A仲介(中小企業特化)</td>
+                    <td>68点</td>
+                    <td>1,500社</td>
+                    <td>信頼構築</td>
+                    <td><span class="badge-pod-maybe">△</span></td>
+                    <td>書店流通推奨</td>
+                </tr>
+                <tr>
+                    <td>12</td>
+                    <td>人材紹介(IT/医療/士業特化)</td>
+                    <td>68点</td>
+                    <td>2,000-3,000社</td>
+                    <td>ブランディング</td>
+                    <td><span class="badge-pod-maybe">△</span></td>
+                    <td>特化型のみ</td>
+                </tr>
+                <tr>
+                    <td>13</td>
+                    <td>税理士(資産税・相続特化)</td>
+                    <td>67点</td>
+                    <td>5,000-10,000事務所</td>
+                    <td>専門性訴求</td>
+                    <td><span class="badge-pod-maybe">△</span></td>
+                    <td>ニッチ特化型</td>
+                </tr>
+                <tr>
+                    <td>14</td>
+                    <td>地方有力中小企業オーナー(製造)</td>
+                    <td>67点</td>
+                    <td>2,000-3,000社</td>
+                    <td>後継承継/人生整理</td>
+                    <td><span class="badge-pod-ok">◎</span></td>
+                    <td>回収不可だが満足度高</td>
+                </tr>
+                <tr>
+                    <td>15</td>
+                    <td>地方有力中小企業オーナー(建設)</td>
+                    <td>67点</td>
+                    <td>1,500-2,500社</td>
+                    <td>後継承継/採用</td>
+                    <td><span class="badge-pod-ok">◎</span></td>
+                    <td>採用力強化で刺さる</td>
+                </tr>
+                <tr>
+                    <td>16</td>
+                    <td>地方有力中小企業オーナー(運送)</td>
+                    <td>66点</td>
+                    <td>800-1,200社</td>
+                    <td>後継承継</td>
+                    <td><span class="badge-pod-ok">◎</span></td>
+                    <td>後継者不安強い</td>
+                </tr>
+                <tr>
+                    <td>17</td>
+                    <td>整形外科(スポーツ整形特化)</td>
+                    <td>66点</td>
+                    <td>2,000施設</td>
+                    <td>患者獲得</td>
+                    <td><span class="badge-pod-ok">◎</span></td>
+                    <td>自費リハビリ増</td>
+                </tr>
+                <tr>
+                    <td>18</td>
+                    <td>司法書士(相続・不動産特化)</td>
+                    <td>65点</td>
+                    <td>3,000-5,000事務所</td>
+                    <td>専門性訴求</td>
+                    <td><span class="badge-pod-ok">◎</span></td>
+                    <td>ニッチ特化型</td>
+                </tr>
+                <tr>
+                    <td>19</td>
+                    <td>産婦人科(出生前診断特化)</td>
+                    <td>65点</td>
+                    <td>500施設</td>
+                    <td>信頼構築</td>
+                    <td><span class="badge-pod-ok">◎</span></td>
+                    <td>高単価・ニッチ</td>
+                </tr>
+                <tr>
+                    <td>20</td>
+                    <td>ファイナンシャルプランナー(IFA)</td>
+                    <td>64点</td>
+                    <td>2,000-3,000人</td>
+                    <td>信頼構築</td>
+                    <td><span class="badge-pod-maybe">△</span></td>
+                    <td>書店流通推奨</td>
+                </tr>
+                <tr>
+                    <td>21</td>
+                    <td>行政書士(建設業許可特化)</td>
+                    <td>63点</td>
+                    <td>3,000-5,000事務所</td>
+                    <td>専門性訴求</td>
+                    <td><span class="badge-pod-ok">◎</span></td>
+                    <td>ニッチ特化型</td>
+                </tr>
+                <tr>
+                    <td>22</td>
+                    <td>弁護士(企業法務・M&A特化)</td>
+                    <td>62点</td>
+                    <td>1,500-2,500事務所</td>
+                    <td>ブランディング</td>
+                    <td><span class="badge-pod-maybe">△</span></td>
+                    <td>特化型のみ</td>
+                </tr>
+                <tr>
+                    <td>23</td>
+                    <td>介護施設(高級老人ホーム)</td>
+                    <td>62点</td>
+                    <td>1,000-1,500施設</td>
+                    <td>ブランディング</td>
+                    <td><span class="badge-pod-ok">◎</span></td>
+                    <td>富裕層特化</td>
+                </tr>
+                <tr>
+                    <td>24</td>
+                    <td>温泉旅館(高級旅館)</td>
+                    <td>61点</td>
+                    <td>800-1,200施設</td>
+                    <td>ブランディング</td>
+                    <td><span class="badge-pod-maybe">△</span></td>
+                    <td>地域・歴史訴求</td>
+                </tr>
+                <tr>
+                    <td>25</td>
+                    <td>農業法人(ブランド農産物)</td>
+                    <td>61点</td>
+                    <td>1,500-2,000法人</td>
+                    <td>ブランディング</td>
+                    <td><span class="badge-pod-maybe">△</span></td>
+                    <td>6次産業化</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
